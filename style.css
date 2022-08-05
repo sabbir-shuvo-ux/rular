@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #171717;
+}
+
+
+
+
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+nav h1{
+    color: #fff;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+nav #logo{
+    width: 40px;
+}
+nav #download{
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav #alert{
+    width: 15px;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left{
+    margin: 0 .5rem;
+}
+
+
+
+
+/* Yellow Box */
+.yellow-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 2rem; */
+}
+.content{
+    background: #edcd52;
+    height: 30px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+.content img{
+    width: 10px;
+    background: #edcd52;
+}
+
+.content p{
+    color: #2e2e2e;
+
+    animation: scrolling 15s linear infinite;
+}
+@keyframes scrolling {
+    0%,100%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(150%);
+    }
+}
+
+
+/* Picture Div */
+.picture-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture-div .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65rem;
+    margin: 20px 0;
+    color: #fff;
+}
+.picture-div img{
+    height: 25vh;
+    width: 95%;
+}
+.picture-div h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.picture-div h2 span{
+    font-size: 14px;
+}
+
+
+
+
+
+/* Menu Div */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 8rem;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu img{
+    width: 40px;
+}
+.menu p{
+    color: #fff;
+    font-size: 12px;
+}
+
+hr{
+    width: 95%;
+    margin-left: 20px;
+    height: 1px;
+    border: .2px solid rgb(80, 78, 78);
+}
+
+
+
+
+/* Statistic */
+.statistic{
+    padding: 1rem 2rem;
+}
+.top-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.top-div li{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.top-div img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+
+
+
+.middle-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #2a2a2a;
+    height: 12vh;
+    padding: 1rem;
+    border-radius: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+.middle-div img{
+    width: 50px;
+}
+
+.middle-div .left-side{
+    display: flex;
+    flex-direction: row;
+}
+.left-side .text{
+    margin-left: 20px;
+}
+
+.middle-div .left-side h1{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.middle-div .left-side p{
+    color: rgb(138, 135, 135);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.middle-div .right-side img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2a2a2a;
+    height: 25vh;
+    padding: 1rem;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 2rem;
+}
+.bottom-div .state{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.state h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(138, 135, 135);
+}
+.state h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #51a36c;
+}
+.state span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #51a36c;
+}
+.state img{
+    margin-top: 15px;
+    width: 70px;
+}
+
+
+
+
+/* Robot Center */
+
+.robot-center{
+    padding: 0 2rem;
+}
+.rob-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+    /* padding: 0 2rem; */
+}
+.rob-head li{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.rob-head img{
+    width: 20px;
+    margin-right: 10px;
+}
+.rob-head .right{
+    gap: 20px;
+}
+.rob-head .right p{
+    color: rgb(138, 135, 135);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.rob-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #2a2a2a;
+    height: 5vh;
+    padding: 1rem;
+    border-radius: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+.rob-div img{
+    width: 25px;
+}
+.rob-div h3{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.rob-One{
+    height: 180px;
+    width: 500px;
+    background: linear-gradient(to right, #edcd52, #171717);;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 1.5rem;
+    border: 1px solid #fff;
+}
+
+.rob-One img{
+    width: 30px;
+}
+.rob-One .top-left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.rob-One .top-left h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.rob-One .top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.rob-One .top-right h2{
+    color: #fff;
+    font-size: 15px;
+}
+.content-box{
+    margin-top: 20px;
+    color: #fff;
+}
+.box .btn{
+    margin-bottom: 5px;
+    margin-left: 200px;
+    padding: 5px 15px;
+    background: #f8d976;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.box .btn:hover{
+    background: #fff;
+    color: #171717;
+}
+
+
+
+/* Icons */
+.icons-sec{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.icon-head li{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.icons img{
+    width: 60px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.ic{
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.ic:hover{
+    background: #616161;
+}
+
+
+
+
+/* Footer Nav */
+.footer-nav{
+    padding: 1rem 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(138, 135, 135);
+}
+.footer-nav img{
+    width: 20px;
+}
+.footer-nav p{
+    color: #fff;
+    font-size: 10px;
+    color: rgb(138, 135, 135);
+}
+.footer-nav .nItem{
+    cursor: pointer;
+}
